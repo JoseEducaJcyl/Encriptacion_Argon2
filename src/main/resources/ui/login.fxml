@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="300.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controler.LoginController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="300.0" prefWidth="300.0" VBox.vgrow="ALWAYS">
+      <children>
+            <Label layoutX="32.0" layoutY="96.0" text="Email" />
+            <Label layoutX="32.0" layoutY="134.0" text="Password" />
+            <TextField fx:id="txtEmail" layoutX="109.0" layoutY="92.0" />
+          <PasswordField fx:id="txtPassword" layoutX="109.0" layoutY="130.0" />
+            <Button fx:id="btnLogin" layoutX="82.0" layoutY="257.0" mnemonicParsing="false" onAction="#onLogin" text="Login" />
+            <Label layoutX="118.0" layoutY="33.0" prefHeight="27.0" prefWidth="180.0" text="Login" textFill="#f20b0b">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+
+            <Label fx:id="lblMensaje" layoutX="66.0" layoutY="200.0" prefHeight="39.0" prefWidth="234.0" text="Mensaje" />
+            <Button fx:id="btnInsertar" layoutX="208.0" layoutY="257.0" mnemonicParsing="false" onAction="#onInsertar" text="Insertar" />
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
